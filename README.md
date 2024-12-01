@@ -1,5 +1,5 @@
 ## URL-Shortener
-
+![Banner](./assets/banner.png)
 ## URL Shortener Features
 
 - [ ] :hash: **Custom Alias**  
