@@ -2,12 +2,11 @@
 ![Banner](./assets/banner.png)
 ## URL Shortener Features
 
-- [ ] :hash: Add Custom Alias
-- [ ] :bar_chart: Analytics Dashboard
-- [ ] :timer_clock: Expiration and Scheduling of Links
-- [ ] :page_facing_up: Links Batch Shortening
-- [ ] :scissors: QR Code Generation for Quick Access
+- [ ] :hash: Create `Custom Short URLs` instead of Random Strings.
+- [ ] :bar_chart: Analytics Dashboard with `Number of Clicks, Geo-Location and Device`.
+- [ ] :timer_clock: `Expiration` of Shorten URLs.
+- [ ] :page_facing_up: `Batch Shortening` of URLs.
+- [ ] :scissors: `QR` Code Generation for Quick Access
 - [ ] :globe_with_meridians: API Access for Integration
-- [ ] :bust_in_silhouette: User Accounts and Management
-- [ ] :shield: Security Features to check redirection of short url
-- [ ] :lock: Password Protection for URLs
+- [ ] :shield: Security Features to `Check Redirection` of short URLs.
+- [ ] :lock: `Set Password` for Accessing Certain URLs.
