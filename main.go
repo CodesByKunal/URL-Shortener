@@ -1,11 +1,20 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
 
-	log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
+	HOST := os.Getenv("host")
+	PORT := os.Getenv("port")
+
+	addr := fmt.Sprint(HOST, ":", PORT)
+
+	log.Print(HOST, PORT)
+	
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
