@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"os"
 	"urlshortener/handler"
+	"urlshortener/middleware"
 )
 
 var (
@@ -20,9 +21,9 @@ func main() {
 
 	addr := HOST + ":" + PORT
 
-	http.Handle("/", http.HandlerFunc(handler.HealthHandler))
+	http.HandleFunc("/health", handler.HealthHandler)
 
-	err := http.ListenAndServe(addr, http.DefaultServeMux)
+	err := http.ListenAndServe(addr, middleware.Logs(http.DefaultServeMux))
 	if err != nil {
 		log.Fatal("Unable to Start Server", err)
 	}
