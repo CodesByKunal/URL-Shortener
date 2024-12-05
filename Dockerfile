@@ -2,12 +2,9 @@ FROM golang:latest
 
 WORKDIR /src
 
-COPY . .
+COPY go.mod .
 
 RUN go mod tidy
-
-ENV HOST=0.0.0.0
-ENV PORT=3000
 
 EXPOSE 3000
 
