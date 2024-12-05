@@ -1,3 +1,11 @@
 services:
   app:
-    container-name:
+    build: .
+    container_name: urlbackend
+    ports:
+      - "3000:3000"
+    environment:
+      - HOST:0.0.0.0
+      - PORT:3000
+    working_dir: /src
+    
