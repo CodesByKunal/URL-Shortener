@@ -10,6 +10,11 @@ services:
     working_dir: /src
     volumes:
       - ./:/src
+    depends_on:
+      - db
+  db:
+    image: postgres:14.5
+    container_name: urldatabase
 networks:
     default:
       name: urlnet
