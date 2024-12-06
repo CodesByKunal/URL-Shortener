@@ -18,10 +18,11 @@ services:
     environment:
       - POSTGRES_PASSWORD=passkey
     volumes:
-      - urlvolume:/var/lib/postgresql/data
+      - psqlvol:/var/lib/postgresql/data
 networks:
     default:
       name: urlnet
 volumes:
-  vol:
-    name: urlvolume
+  psqlvol:
+    name: psqlvol
+    external: true
