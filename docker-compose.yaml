@@ -17,6 +17,11 @@ services:
     container_name: urldatabase
     environment:
       - POSTGRES_PASSWORD=passkey
+    volumes:
+      - urlvolume:/var/lib/postgresql/data
 networks:
     default:
       name: urlnet
+volumes:
+  vol:
+    name: urlvolume
