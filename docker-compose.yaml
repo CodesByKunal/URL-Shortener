@@ -15,6 +15,8 @@ services:
   db:
     image: postgres:14.5
     container_name: urldatabase
+    environment:
+      - POSTGRES_PASSWORD=passkey
 networks:
     default:
       name: urlnet
